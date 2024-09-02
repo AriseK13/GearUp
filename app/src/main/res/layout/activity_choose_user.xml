@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ChooseUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/gear"
+            android:layout_width="220dp"
+            android:layout_height="170dp"
+            android:src="@drawable/gear"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Role"
+            android:layout_below="@+id/gear"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="120dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <RadioButton
+            android:id="@+id/seller"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/role"
+            android:layout_marginTop="20dp"
+            android:onClick="onRadioClicked"
+            android:text="Seller"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/buyer"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seller"
+            android:layout_marginTop="20dp"
+            android:onClick="onRadioClicked"
+            android:text="Buyer"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rider"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer"
+            android:layout_marginTop="20dp"
+            android:onClick="onRadioClicked"
+            android:text="Rider"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_below="@+id/rider"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="120dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/proceedbtn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/result"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/loginbtn_custom"
+            android:backgroundTint="@null"
+            android:text="PROCEED"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            android:textSize="16sp" />
+
+
+
+</RelativeLayout>
+</ScrollView>
